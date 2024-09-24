@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 auto;
+    align-items: center;
+}
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url(Images/bg1_img.jpg) center bottom no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center; 
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 15px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color:blue
+}
+#menu{
+    display: none;
+}
+.menuIcono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.headerContent{
+    text-align: center;
+}
+.headerContent h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: aliceblue;
+    margin: 35px;
+    
+}
+.headerContent p{
+    padding: 0 250px;
+    margin-bottom: 25px;
+    color: aliceblue;
+}
+.btn1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: blue;
+    color:aliceblue;
+}
+.btn1:hover{
+    background-color: rgba(0, 0, 255, 0.719);
+}
+.introduccion {
+    padding: 20px;
+    background-color: #fffccf;
+    background-image: url('Images/bg2_img.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    color: #161515; 
+}
+
+.introduccionContent {
+    position: relative; 
+    text-align: center;
+    z-index: 1;
+}
+
+.introduccionContent h2 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.introduccionGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.introduccionItems img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.introduccionItems{
+    padding: 0 25px;
+}
+.introduccionItems h3{
+    color: #161515;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footerContent{
+    flex-direction: column;
+    text-align: center;
+}
