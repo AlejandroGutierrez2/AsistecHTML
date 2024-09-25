@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     margin: 0 auto;
     align-items: center;
@@ -64,6 +63,14 @@ body{
     text-decoration: none;
     list-style: none;
 }
+.carousel{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -84,10 +91,14 @@ body{
     color: aliceblue;
 }
 .btn1{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
     display: inline-block;
     padding: 11px 35px;
     background-color: blue;
     color:aliceblue;
+
 }
 .btn1:hover{
     background-color: rgba(0, 0, 255, 0.719);
@@ -98,6 +109,7 @@ body{
     background-image: url('Images/bg2_img.jpg'); 
     background-size: cover;
     background-position: center; 
+    background-attachment: fixed;
     position: relative;
     color: #161515; 
 }
@@ -139,7 +151,49 @@ body{
     font-size: 20px;
     margin-bottom: 10px;
 }
+.servicios{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(Images/bg3_img.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+}
+.serviciosContent{
+    text-align: center;
+}
+.serviciosContent h2{
+    font-size: 60px;
+    line-height: 70px;
+    color: #fffccf;
+    margin-bottom: 50px;
+}
+.serviciosContent p{
+    font-size: 16px;
+    color: #fffccf;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+.serviciosGroup{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.serviciosItems{
+    padding: 0 60px;
+}
+.serviciosItems img{
+    width: 250px;
+    height: 300px;
+    margin-bottom: 15px;
 
+}
+.serviciosItems h3{
+    color: #fffccf;
+    font-size: 30px;
+}
 .footerContent{
     flex-direction: column;
     text-align: center;
