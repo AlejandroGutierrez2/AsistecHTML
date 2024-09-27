@@ -17,54 +17,39 @@ body{
         rgba(0, 0, 0, 0.5)),
         url(Images/bg1_img.jpg) center bottom no-repeat;
     background-size: cover;
-    min-height: 90px;
+    min-height: 70vh;
     display: flex;
     align-items: center; 
     background-attachment: fixed;
 }
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.menu .navbar ul li{
-    position: relative;
-    float: left;
+ 
+.navbar {
+    background-color: rgba(0,0,0,0.7);
 }
 
-.menu .navbar ul li a{
-    font-size: 15px;
-    padding: 20px;
-    color: #ffffff;
-    display: block;
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
     font-weight: 600;
-    text-decoration: none;
 }
-.menu .navbar ul li a:hover{
-    color:rgb(130, 130, 236)
+
+.navbar-nav .nav-link:hover {
+    color: #82a5ea;
 }
-#menu{
-    display: none;
-}
-.menuIcono{
-    width: 25px;
-}
-.menu label{
-    cursor: pointer;
-    display: none;
-}
+
 .logo{
     color: #fff;
     font-size: 25px;
     font-weight: 800;
     text-decoration: none;
 }
-
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .btn1{
     box-sizing: border-box;
     text-decoration: none;
@@ -81,7 +66,7 @@ body{
 }   
 .servicios{
     display: flex;
-    padding-top: 10px;
+    padding-top: 70px;
 }
 .serviciosItem{
     width: 50%;
@@ -97,9 +82,6 @@ body{
     transition-duration: 3s;
     background-size: cover;
     width: 50%;
-}
-.serviciosItem2:hover{
-    
 }
 .serviciosItem3{
     background-image: url(Images/srv2_img.png);
@@ -133,9 +115,8 @@ body{
     width: 50%;
     transition: transform 0.3s ease;
 }
-
 .serviciosItem2:hover, .serviciosItem3:hover, .serviciosItem4:hover, .serviciosItem5:hover {
-    transform: scale(0.95); /* Aumenta el tamaño en un 10% al hacer hover */
+    transform: scale(0.95);
 }
 section:last-of-type {
     margin-bottom: 0;
@@ -155,4 +136,19 @@ p{
     font-size: 15px;
     color: #3b3c3f;
     margin: 25px 0 45px 0;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }

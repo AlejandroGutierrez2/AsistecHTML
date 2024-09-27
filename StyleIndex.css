@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 body{
     font-family: "Raleway", sans-serif !important;
-    font-style: normal;
+    font-style: normal !important ;
     margin: 0 auto;
     align-items: center;
 }
@@ -197,4 +197,20 @@ body{
 .serviciosItems h3{
     color: #fffccf;
     font-size: 30px;
+}
+ 
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
